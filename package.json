@@ -22,7 +22,11 @@
   },
   "homepage": "https://github.com/beccadoan/contact-card#readme",
   "dependencies": {
-    "concurrently": "^7.3.0"
+    "concurrently": "^7.3.0",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.0",
+    "lodash": "^4.17.21",
+    "webpack-cli": "^4.10.0"
   },
   "engines": {
     "node": "16.15.1"
