@@ -1,7 +1,7 @@
 import './form'
 import './submit'
 import '../css/index.css'
-import { initDb } from './database'
+import { initDb ,getDb, postDb } from './database'
 import { Tooltip, Toast, Popover } from 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
