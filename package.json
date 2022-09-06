@@ -23,5 +23,9 @@
   "homepage": "https://github.com/beccadoan/contact-card#readme",
   "dependencies": {
     "concurrently": "^7.3.0"
-  }
+  },
+  "engines": {
+    "node": "16.15.1"
+  },
+  "heroku-prebuild": "npm install --dev"
 }
