@@ -27,5 +27,8 @@
   "engines": {
     "node": "16.15.1"
   },
-  "heroku-prebuild": "npm install --dev"
+  "heroku-prebuild": "npm install --dev",
+  "devDependencies": {
+    "webpack": "^5.74.0"
+  }
 }
