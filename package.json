@@ -12,6 +12,10 @@
     "client": "cd client && npm start",
     "heroku-prebuild": "npm install --dev"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beccadoan/contact-card.git"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
