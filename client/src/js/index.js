@@ -91,3 +91,9 @@ window.deleteCard = (e) => {
     // Toggles the Submit button so that it now Updates an existing contact instead of posting a new one
       submitBtnToUpdate = true;
   };
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./service-worker.js')
+    })
+  }
