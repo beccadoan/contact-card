@@ -1,16 +1,15 @@
 {
-  "name": "contact-cards",
+  "name": "contact-card",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "concurrently \"cd server && npm run server\"  \"cd client && npm run build\"",
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "npm run build && cd server && node server.js",
-    "server": "cd server node server.js --ignore client",
+    "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
-    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\" ",
     "client": "cd client && npm start",
-    "heroku-prebuild": "npm install --dev"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,10 +17,31 @@
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beccadoan/contact-card/issues"
+  },
+  "homepage": "https://github.com/beccadoan/contact-card#readme",
   "dependencies": {
-    "concurrently": "^7.0.0"
+    "concurrently": "^7.3.0",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.0",
+    "lodash": "^4.17.21",
+    "webpack-cli": "^4.10.0"
   },
   "engines": {
-    "node": "16.x"
+    "node": "16.15.1"
+  },
+  "heroku-prebuild": "npm install --dev",
+  "devDependencies": {
+    "@webpack-cli/serve": "^1.4.0",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "html-webpack-plugin": "^5.5.0",
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1"
   }
 }
